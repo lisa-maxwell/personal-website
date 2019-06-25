@@ -1,0 +1,65 @@
+
+<div data-ng-controller="postsCtrl">
+    
+    <!-- 1 post with full screen image background -->
+    <section style="background-image:url('{{p.image}}')" class="min-vh-100 d-flex align-items-center bg-image" data-ng-repeat="p in items.slice(0,1)">
+        <div class="container py-4">
+            <div class="row px-4">
+                <div class="col-xl-7 col-lg-8 col-md-9 bg-white wow fadeInUp" data-ng-class-odd="'push-xl-5 push-lg-4 push-md-3'">
+                    <div class="p-4">
+                        <h1><a data-ng-href="#/posts/{{p.id}}" class="link">{{p.title}}</a></h1>
+                        <h6 class="wow fadeIn text-uppercase small wide-space">A subtitle may go here</h6>
+                        <p class="lead pt-2 pr-2"><span class="text-capitalize" data-ng-bind="p.heading"></span> {{p.description}}</p>
+                        <a data-ng-href="#/posts/{{p.id}}" class="btn btn-primary btn-xl page-scroll mb-2">Read</a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3"  data-ng-class-odd="'pull-xl-7 pull-lg-8 pull-md-9'"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 2 posts with image next to title and description -->
+    <section data-ng-repeat="p in items.slice(1,3)" data-ng-class-even="'bg-alt'">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8 col-md-9 wow fadeInUp" data-ng-class-odd="'push-xl-5 push-lg-4 push-md-3'">
+                    <h1><a data-ng-href="#/posts/{{p.id}}" class="link">{{p.title}}</a></h1>
+                    <h6 class="wow fadeIn text-uppercase small wide-space">A subtitle may go here</h6>
+                    <p class="lead pt-2 pr-2"><span class="text-capitalize" data-ng-bind="p.heading"></span> {{p.description}}</p>
+                    <a data-ng-href="#/posts/{{p.id}}" class="btn btn-primary btn-xl page-scroll mb-2">Read</a>
+                </div>
+                <div class="col-xl-5 col-lg-4 col-md-3"  data-ng-class-odd="'pull-xl-7 pull-lg-8 pull-md-9'">
+                    <img data-ng-src="{{p.image}}" class="img-fluid rounded" alt="post image" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- remaining posts repeating in masonry columns -->
+    <div class="container py-5">
+        <div class="card-columns my-4">
+            <div class="card card-default mb-2" data-ng-repeat-start="p in items.slice(4,99)">
+                <div class="card-img-top wow fadeIn">
+                    <a data-ng-href="#/posts/{{p.id}}" class="link"><img data-ng-src="{{p.image}}" alt="post image" class="mx-auto img-fluid d-block"></a>
+                </div>
+                <div class="card-body pt-2 pl-0">
+                    <h6 class="small text-wide">
+                        <a data-ng-href="#/posts/{{p.id}}">{{p.author}}</a>
+                    </h6>
+                    <h2>
+                        <a data-ng-href="#/posts/{{p.id}}" data-ng-bind="p.title" class="link"></a>
+                    </h2>
+                </div>
+            </div>
+            <div class="card card-default mb-2" data-ng-repeat-end="" data-ng-if="$index % 4 == 0">
+                <div class="card-body pt-2 pb-2 bg-alt">
+                    <p class="text-secondary">
+                       <span class="text-capitalize" data-ng-bind="p.heading"></span> {{p.description}}
+                    </p>
+                    <a data-ng-href="#/posts/{{p.id}}" class="my-3 btn btn-outline-primary text-right">Read</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

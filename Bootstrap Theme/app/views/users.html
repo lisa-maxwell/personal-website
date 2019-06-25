@@ -1,0 +1,76 @@
+
+<div class="container py-4" data-ng-controller="usersCtrl">
+    
+    <!-- users list -->
+    <div class="row">
+        <!-- single user (repeated) -->
+        <div data-ng-repeat="u in ps.pagedItems[ps.currentPage]" class="col-12 col-sm-6 py-3">
+            <div class="card card-body h-100 p-2">
+                <div class="row">
+                    <div class="col-12 col-lg-2">
+                        <a href data-target="#userDetailModal" data-toggle="modal" data-ng-click="userDetail(u)">
+                            <img data-ng-src="{{u.avatar}}" alt="{{u.username}}" class="img-fluid rounded-circle mx-auto d-block bg-faded" />
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-10 text-center text-lg-left">
+                        <h3 class="name text-capitalize">
+                            <a href><i class="float-right hidden-md-down ion-ios-heart-outline"></i></a>
+                            <a class="link" href data-ng-click="userDetail(u)">{{u.fullname||u.username}}</a>
+                        </h3>
+                        <div class="text-muted">{{u.address}}</div>
+                        <div class="text-muted">{{u.city}} {{u.state}}</div>
+                        <a href class="link small text-truncate">{{u.email}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation" class="my-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item" ng-class="{disabled: ps.currentPage == 0}">
+            <a class="page-link border-0" href="javascript:;" data-ng-click="ps.prevPage()"><i class="fa fa-chevron-left ion-ios-arrow-left"></i><span class="sr-only">Prev</span></a>
+        </li>
+        <li class="page-item" ng-repeat="n in ps.range(ps.pagedItems.length)" ng-class="{active: n == ps.currentPage}" data-ng-click="ps.setPage(n)">
+            <a class="page-link border-0" href="javascript:;" data-ng-bind="n+1">1</a>
+        </li>
+        <li class="page-item" ng-class="{disabled: ps.currentPage == ps.pagedItems.length - 1}">
+            <a class="page-link border-0" href="javascript:;" data-ng-click="ps.nextPage()"><i class="fa fa-chevron-right ion-ios-arrow-right"></i><span class="sr-only">Next</span></a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- user detail modal -->
+    <div id="userDetailModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body py-3">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h1 class="mt-3 mb-0">{{selected.fullname||selected.username}}</h1>
+                            <div class="font-weight-bold" data-ng-bind="selected.jobtitle"></div>
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <img data-ng-src="{{selected.avatar}}" id="userImage" alt="profile image" class="mb-4 rounded-circle img-fluid bg-faded" />
+                        </div>
+                        <div class="col-sm-6">
+                            <div data-ng-bind="selected.address"></div>
+                            <div>{{selected.city}} {{selected.state}} {{selected.zipcode}}</div>
+                            <a href="mailto:{{selected.email}}" class="link">{{selected.email}}</a>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <div data-ng-bind="selected.company"></div>
+                            <div data-ng-bind="selected.slogan" class="text-truncate text-capitalize"></div>
+                            <a ng-href="{{selected.website}}" class="link text-truncate">{{selected.website}}</a>
+                        </div>
+                        <div class="col-sm-12 text-justify py-4">
+                            <p data-ng-bind="selected.bio"></p>
+                        </div>
+                    </div>
+                    <p class="text-right">
+                        <button class="btn btn-primary btn-lg" data-dismiss="modal" aria-hidden="true">OK</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

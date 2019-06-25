@@ -1,0 +1,53 @@
+
+<div class="container" data-ng-controller="postsCtrl">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-5 py-2">
+            <h1 class="display-1 hidden-down pt-2 post-title">
+                <a href="" class="link" data-ng-bind="post.title">
+                    <!-- post title -->
+                </a>
+            </h1>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-5 ml-auto py-2">
+            <blockquote class="blockquote px-1">
+                <h3 class="text-right pt-2"><a href="#/posts">Blog</a></h3>
+            </blockquote>
+        </div>
+        <div class="col-sm-12">
+            <div class="card card-default pt-2 pb-2">
+                <p class="font-italic lead text-capitalize" data-ng-bind="post.heading">Improving lives and driving economic opportunity</p>
+            </div>
+            <h6 class="text-wide pt-2"><a class="float-right post-category" data-ng-bind="post.category">Category</a> <span class="text-dark post-author" data-ng-bind="post.author">Author's Name</span></h6>
+        </div>
+    </div>
+    <div class="row pt-2">
+        <div class="col-md-12">
+            <img data-ng-src="{{post.image}}" class="post-img img-fluid" alt="post photo" />
+        </div>
+        <div class="col-md-12 py-4 post-content">
+            <p data-ng-bind="post.content">
+                <!-- post content  -->
+            </p>
+            <!-- tags -->
+            <h4>
+                <a href="#/posts" data-ng-bind="post.tag1" class="badge badge-dark badge-pill"></a> 
+                <a href="#/posts" data-ng-bind="post.tag2" class="badge badge-dark badge-pill"></a> 
+                <a href="#/posts" data-ng-bind="post.tag3" class="badge badge-dark badge-pill"></a>
+            </h4>
+        </div>
+        <div class="col-md-7 py-5">
+            <div class="bg-alt p-3">
+                <h6 class="text-wide text-uppercase pt-2"><span class="text-dark" data-ng-bind="post.author">Author's Name</span></h6>
+                <p class="text-secondary">
+                    <!-- author bio-->
+                    Nullam sapien massa, aliquam in cursus ut, ullamcorper in tortor. Liquam codeply mauris arcu, tristique a lobortis vitae, condimentum feugiat justo.
+                </p>
+                <div class="nav justify-content-end">
+                    <a href="" class="nav-link lead pr-0"><i class="ion-social-twitter"></i></a>
+                    <a href="" class="nav-link lead pr-0"><i class="ion-social-facebook"></i></a>
+                    <a href="" class="nav-link lead pr-0"><i class="ion-social-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

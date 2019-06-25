@@ -1,0 +1,55 @@
+
+<div class="container py-4" data-ng-controller="postsCtrl">
+    
+    <!-- posts list -->
+    <ul class="list-group">
+        
+        <!-- single post (repeated) -->
+        <li data-ng-repeat="p in ps.pagedItems[ps.currentPage]" class="list-group-item d-block p-2 border-left-0 border-right-0">
+            <div class="row">
+                <div class="col-sm-3 col-md-2">
+                    <a data-ng-href="#/posts/{{p.id}}" title="{{p.title}}">
+                        <img data-ng-src="{{p.image}}" class="img-fluid rounded" />
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-10">
+                    <div class="float-right text-right">
+                        <!-- author and date -->
+                        <em data-ng-bind="p.author"></em><br>
+                        <small data-ng-bind="p.created"></small>
+                    </div>
+                    
+                    <!-- title -->
+                    <h4><a class="link" data-ng-href="#/posts/{{p.id}}" data-ng-bind="p.title"></a></h4>
+                    
+                    <!-- description -->
+                    <p class="mp-2 text-truncate"><span class="text-capitalize" data-ng-bind="p.heading"></span> {{p.description}}</p>
+                    
+                    <div class="float-right text-right small">
+                        <!-- comment and view counts -->
+                        <span data-ng-bind="p.views"></span> views ·   
+                        <span data-ng-bind="p.comments"></span> comments
+                    </div>
+                    
+                    <a href="" data-ng-bind="p.tag1" class="badge badge-dark badge-pill"></a>
+                    <a href="" data-ng-bind="p.tag2" class="badge badge-dark badge-pill"></a>
+                    <a href="" data-ng-bind="p.tag3" class="badge badge-dark badge-pill"></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <nav aria-label="Page navigation" class="mt-3 mb-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item" data-ng-class="{disabled: ps.currentPage == 0}" >
+            <a class="page-link border-0" href="javascript:;" data-ng-click="ps.prevPage()"><i class="fa fa-chevron-left ion-ios-arrow-left"></i><span class="sr-only">Prev</span></a>
+        </li>
+        <li class="page-item" data-ng-repeat="n in ps.range(ps.pagedItems.length)" data-ng-class="{active: n == ps.currentPage}" ng-click="ps.setPage(n)">
+            <a class="page-link border-0" href="javascript:;" data-ng-bind="n+1">1</a>
+        </li>
+        <li class="page-item" data-ng-class="{disabled: ps.currentPage == ps.pagedItems.length - 1}">
+            <a class="page-link border-0" href="javascript:;" data-ng-click="ps.nextPage()"><i class="fa fa-chevron-right ion-ios-arrow-right"></i><span class="sr-only">Next</span></a>
+        </li>
+      </ul>
+    </nav>
+    
+</div>

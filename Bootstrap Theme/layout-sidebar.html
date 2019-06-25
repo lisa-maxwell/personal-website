@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bodeo - Layout Sidebar</title>
+    <meta name="description" content="A modular template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-custom.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/ionicons.css?v=2.0.1" media="none" onload="this.media=&apos;all&apos;">
+        
+    <!-- A layout with responsive multi-level sidebar menu on the left -->
+</head>
+<body class="preload">
+<div class="inc_" data-template="./partials/p_header.html"></div>
+<div class="container-fluid wrapper">
+    <div class="row">
+        <div class="col-md-2 col-1 pl-0 collapse show width sidebar sidebar-light" id="sidebar">
+            <div class="inc_" data-template="./partials/p_sidebar_menu.html"></div>
+        </div>
+        <!-- main container -->
+        <main class="col-md-10 col px-5 px-md-0 main">
+            <!-- this sidebar layout work best with full width in the main container -->
+            <div class="inc_" data-template="./partials/p_content_full.html"></div>
+        </main>
+    </div>
+</div>
+
+<!--scripts loaded here-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

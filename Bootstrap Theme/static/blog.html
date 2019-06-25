@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bodeo Template - Blog</title>
+    <meta name="description" content="A blog template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-custom.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/ionicons.css?v=2.0.1" media="none" onload="this.media=&apos;all&apos;">
+        
+    <!-- Blog page with carousel slider, highlighted posts and sidebar -->
+</head>
+<body class="preload" id="blog">
+<!-- navbar -->
+<nav id="topNav" class="navbar navbar-default mb-3 navbar-expand-lg fixed-top" data-toggle="affix">
+    <!-- this toggler only displays on offcanvas layout -->
+    <a href="#" class="navbar-toggler-anim toggler-offcanvas my-auto collapsed border-0 mr-2" data-toggle="collapse" data-target="#offcanvasNavbar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <!-- text brand or logo image goes here -->
+    <a class="navbar-brand page-scroll text-uppercase wide-space link" href="./">
+        Bodeo
+    </a>
+    <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="collapse navbar-collapse border-0" id="collapsingNavbar">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#one" href="./#one">Cards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#two" href="./#two">Flexbox</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#three" href="./#three">Content</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#blog" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#five" href="./#five">Masonry</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#last" href="./#last">More</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown dropdown-hover megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages &amp; Layouts<span class="caret"></span></a>
+                <div class="dropdown-menu dropdown-menu-right pt-1 pb-2">
+                    <div class="row mx-1">
+                        <div class="col-12">
+                            <span class="close d-sm-none" data-toggle="dropdown">&#xD7;</span>
+                        </div>
+                        <ul class="col-6 list-unstyled small" role="menu">
+                            <li class="text-uppercase text-muted text-wide pt-2 pb-1">Pages</li>
+                            <li><a class="link" href="about.html">About</a></li>
+                            <li><a class="link" href="./app">Angular App</a></li>
+                            <li><a class="link" href="blog.html">Blog / Articles</a></li>
+                            <li><a class="link" href="blog-detail.html">Blog Post</a></li>
+                            <li><a class="link" href="contact.html">Contact / Map</a></li>
+                            <li><a class="link" href="clients.html">Clients / Testimonial</a></li>
+                            <li><a class="link" href="demos.html">Demos</a></li>
+                            <li><a class="link" href="error-404.html">Error 404</a></li>
+                            <li><a class="link" href="faq.html">FAQ&apos;s</a></li>
+                            <li><a class="link" href="features.html">Features</a></li>
+                            <li><a class="link" href="login.html">Login / Register</a></li>
+                            <li><a class="link" href="legal.html">Privacy Policy</a></li>
+                            <li><a class="link" href="pricing.html">Pricing</a></li>
+                            <li><a class="link" href="products.html">Products</a></li>
+                            <li><a class="link" href="product-detail.html">Product Detail</a></li>
+                            <li><a class="link" href="results.html">Search Results</a></li>
+                            <li><a class="link" href="cart.html">Shopping Cart</a></li>
+                            <li><a class="link" href="legal.html">Terms &amp; Conditions</a></li>
+                            <li><a class="link" href="user-profile.html">User Profile</a></li>
+                        </ul>
+                        <ul class="col-6 list-unstyled small text-right" role="menu">
+                            <li class="text-uppercase text-muted text-wide pt-2 pb-1">Specialized</li>
+                            <li><a class="link" href="dashboard.html">Dashboard</a></li>
+                            <li><a class="link" href="invoice.html">Invoice</a></li>
+                            <li><a class="link" href="pg-medical.html">Medical / Dental</a></li>
+                            <li><a class="link" href="portfolio.html">Portfolio</a></li>
+                            <li><a class="link" href="pg-restaurant.html">Restaurant Menu</a></li>
+                            <li class="text-uppercase text-muted text-wide pt-3 pb-1">Layouts</li>
+                            <li><a class="link" href="./">Single page</a></li>
+                            <li><a class="link" href="layout-video.html">Video background</a></li>
+                            <li><a class="link" href="layout-image.html">Photo background</a></li>
+                            <li><a class="link" href="layout-slider.html">Full-screen slider</a></li>
+                            <li><a class="link" href="layout-2-col.html">2-column</a></li>
+                            <li><a class="link" href="layout-3-col.html">3-column</a></li>
+                            <li><a class="link" href="layout-full.html">Full width</a></li>
+                            <li><a class="link" href="layout-sidebar.html">Sidebar nav</a></li>
+                            <li><a class="link" href="layout-offcanvas.html">Off-canvas nav</a></li>
+                            <li><a class="link" href="layout-grid.html">Grid / Gallery</a></li>
+                            <li><a class="link" href="layout-masonry.html">Masonry</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown dropdown-hover megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Elements<span class="caret"></span></a>
+                <div class="dropdown-menu dropdown-menu-right pt-1 pb-2">
+                    <div class="row mx-1">
+                        <div class="col-12">
+                            <span class="close d-sm-none" data-toggle="dropdown">&#xD7;</span>
+                        </div>
+                        <ul class="col-md-6 col-6 list-unstyled small" role="menu">
+                            <li class="text-uppercase text-wide pt-2 pb-1">
+                                <a class="link text-muted" href="elements.html">Elements</a>
+                            </li>
+                            <li><a class="link" href="./elements.html#accordions">Accordion &amp; Collapsible</a></li>
+                            <li><a class="link" href="./elements.html#alerts">Alerts / Notifications</a></li>
+                            <li><a class="link" href="./elements.html#badges">Badges &amp; Tags</a></li>
+                            <li><a class="link" href="./elements.html#buttons">Buttons &amp; Colors</a></li>
+                            <li><a class="link" href="./elements.html#carousels">Carousel / Sliders</a></li>
+                            <li><a class="link" href="./elements.html#comments">Comments</a></li>
+                            <li><a class="link" href="./layout-grid.html">Gallery</a></li>
+                            <li><a class="link" href="./elements.html#jumbotron">Jumbotron</a></li>
+                            <li><a class="link" href="./elements.html#lists">Lists</a></li>
+                            <li><a class="link" href="./layout-masonry.html">Masonry</a></li>
+                            <li><a class="link" href="./elements.html#modals">Modal &amp; Overlay</a></li>
+                            <li><a class="link" href="./elements.html#progress">Progress</a></li>
+                            <li><a class="link" href="./elements.html#tables">Tables</a></li>
+                            <li><a class="link" href="./elements.html#tabs">Tabs</a></li>
+                            <li><a class="link" href="./elements.html#imageGrids">Thumbnails &amp; Images</a></li>
+                        </ul>
+                        <ul class="col-md-6 col-6 list-unstyled small text-right" role="menu">
+                            <li class="text-uppercase text-wide pt-2 pb-1">
+                                <a class="link text-muted" href="cards.html">Cards</a>
+                            </li>
+                            <li><a class="link" href="cards.html#card_feature">Image card</a></li>
+                            <li><a class="link" href="cards.html#card_list">List card</a></li>
+                            <li><a class="link" href="cards.html#card_contacts">Contacts card</a></li>
+                            <li><a class="link" href="cards.html#card_thumbnails">Thumbnails card</a></li>
+                            <li><a class="link" href="cards.html#card_product">Product card</a></li>
+                            <li><a class="link" href="cards.html#card_profile">Profile card</a></li>
+                            <li><a class="link" href="cards.html#card_stats">Stats card</a></li>
+                            <li class="text-uppercase text-wide pt-3 pb-1">
+                                <a class="link text-muted" href="elements.html#forms">Forms</a>
+                            </li>
+                            <li><a class="link" href="./elements.html#formLogin">Login form</a></li>
+                            <li><a class="link" href="./elements.html#formRegister">Sign-up form</a></li>
+                            <li><a class="link" href="./elements.html#formChangePassword">Password change form</a></li>
+                            <li><a class="link" href="./elements.html#formResetPassword">Password reset form</a></li>
+                            <li><a class="link" href="./elements.html#formUserEdit">User info form</a></li>
+                            <li><a class="link" href="./elements.html#formContact">Contact form</a></li>
+                            <li><a class="link" href="./elements.html#formPayment">Payment form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-toggle="modal" title="A Bootstrap theme" href="#aboutModal">
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- /navbar -->
+<div class="my-4">
+    <!--slider-->
+    <div class="container mt-2 px-0">
+            <!--cards carousel slider-->
+    <div class="carousel slide w-100 mb-5" data-ride="carousel" data-interval="10000" id="postsCarousel">
+        <div class="carousel-inner pb-2">
+                <!-- three (3) sildes per carousel item -->
+                <div class="carousel-item active flex-column flex-sm-row align-items-stretch">
+                    <div class="col-md-4">
+                        <div class="card card-default h-100">
+                            <div class="card-img-top card-img-top-200 card-zoom">
+                                <a href="./blog-detail.html"><img class="img-fluid mx-auto d-block" src="./assets/images/sample16.jpg" alt="Carousel 1"></a>
+                            </div>
+                            <div class="card-body pt-2 pl-1">
+                                <h6 class="small text-wide text-truncate pb-1">Insight</h6>
+                                <h2>
+                                    <a href="./blog-detail.html">Why Stuff Happens Every Year.</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-default h-100">
+                            <div class="card-img-top card-img-top-200 card-zoom">
+                                <a href="./blog-detail.1.html"><img class="img-fluid mx-auto d-block" src="./assets/images/sample20.jpg" alt="Carousel 2"></a>
+                            </div>
+                            <div class="card-body pt-2 pl-1">
+                                <h6 class="small text-wide text-truncate pb-1">Development</h6>
+                                <h2>
+                                    <a href="./blog-detail.html">How to Make Every Line Count.</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-default h-100">
+                            <div class="card-img-top card-img-top-200 card-zoom">
+                                <a href="./blog-detail.html"><img class="img-fluid mx-auto d-block" src="./assets/images/sample5.jpg" alt="Carousel 3"></a>
+                            </div>
+                            <div class="card-body pt-2 pl-1">
+                                <h6 class="small text-wide text-truncate pb-1">Design</h6>
+                                <h2>
+                                    <a href="./blog-detail.html">Why Responsive is Essential.</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item flex-column flex-sm-row align-items-stretch">
+                    <div class="col-md-4">
+                        <div class="card card-default h-100">
+                            <div class="card-img-top card-img-top-200 card-zoom">
+                                <a href="./blog-detail.1.html"><img class="img-fluid mx-auto d-block" src="./assets/images/sample10.jpg" alt="Carousel 4"></a>
+                            </div>
+                            <div class="card-body pt-2 pl-1">
+                                <h6 class="small text-wide text-truncate pb-1">Another</h6>
+                                <h2>
+                                    <a href="./blog-detail.html">Tagline or call-to-action.</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-default h-100">
+                            <div class="card-img-top card-img-top-200 card-zoom">
+                                <a href="./blog-detail.html"><img class="img-fluid mx-auto d-block" src="./assets/images/sample40.jpg" alt="Carousel 5"></a>
+                            </div>
+                            <div class="card-body pt-2 pl-1">
+                                <h6 class="small text-wide text-truncate pb-1">Category 1</h6>
+                                <h2>
+                                    <a href="./blog-detail.html">Here&apos;s my Story Title.</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-default h-100">
+                            <div class="card-img-top card-img-top-200 card-zoom">
+                                <a href="./blog-detail.html"><img class="img-fluid mx-auto d-block" src="./assets/images/sample54.jpg" alt="Carousel 6"></a>
+                            </div>
+                            <div class="card-body pt-2 pl-1">
+                                <h6 class="small text-wide text-truncate pb-1">Category 3</h6>
+                                <h2>
+                                    <a href="./blog-detail.1.html">Catchy Title of a Blog Post.</a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 text-md-right text-center lead">
+                    <a class="prev pr-2" data-target="#postsCarousel" data-slide="prev" href="" title="Newer"><i class="fa fa-chevron-left ion-ios-arrow-left"></i></a>
+                    <a class="next pl-2" data-target="#postsCarousel" data-slide="next" href="" title="Older"><i class="fa fa-chevron-right ion-ios-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/multi cards carousel slider-->
+
+    </div>
+	<div class="container mt-4">
+		<div class="row">
+			<div id="blog-content" class="col-md-8 flex-first flex-md-last">
+				<!--blog list-->
+				<div class="row">
+				    
+				    <!--repeating items -->
+				    <div class="col-12">
+                        <div class="card card-default mb-3 pb-3 wow fadeIn">
+    				        <a href="./blog-detail.html"><img src="./assets/images/office6.jpg" class="card-img-top img-fluid mb-2" alt="image"></a>
+    				        <a href="./blog-detail.html" class="float-right text-muted small">03.15.2017</a> 
+    				        <h2><a href="">Title McRino</a></h2>
+    				        <ul class="list-inline">
+    							<li class="list-inline-item author small wide-space text-uppercase"> <a class="" href="#">Johan Doe</a> </li>
+    							<li class="list-inline-item comments small wide-space text-uppercase"> <i class="ion-ios-chatbubble-outline"></i> <a href="./blog-detail.html" class="link">1 Comments</a> </li>
+    							<li class="list-inline-item tag float-right font-weight-normal">  
+    							    <i class="ion-ios-pricetag-outline"></i>
+    							    <!-- tags-->
+    							    <span><a class="badge badge-dark badge-pill" href="#">Design</a></span> <span><a class="badge badge-dark badge-pill" href="#">DIY</a></span> 
+    							    <!-- / tags-->
+    							</li>
+    						</ul>
+    						<p>
+    						     Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Vestibulum tincidunt ullamcorper eros eget luctus. Nulla eget porttitor libero... <a href="./blog-detail.html" class="link">Read More</a>
+    						</p>
+						</div>
+				    </div>
+				    <div class="col-12">
+                        <div class="card card-default mb-3 pb-3 wow fadeIn">
+    				        <a href="./blog-detail.1.html"><img src="./assets/images/office1.jpg" class="card-img-top img-fluid mb-2" alt="image"></a>
+    				        <a href="./blog-detail.1.html" class="float-right text-muted">03.12.2017</a> 
+    				        <h2><a href="">Ambition is Blond</a></h2>
+    				        <ul class="list-inline">
+    							<li class="list-inline-item autho small wide-space text-uppercase"> <a href="">Mary Hoyt</a> </li>
+    							<li class="list-inline-item comments small wide-space text-uppercase"> <i class="ion-ios-chatbubble-outline"></i> <a href="./blog-detail.html" class="link">2 Comments</a> </li>
+    							<li class="list-inline-item tag float-right font-weight-normal">  
+    							    <i class="ion-ios-pricetag-outline"></i>
+    							    <!-- tags-->
+    							    <span><a class="badge badge-dark badge-pill" href="#">Work</a></span> <span><a class="badge badge-dark badge-pill" href="">Lifestyle</a></span> 
+    							    <!-- / tags-->
+    							</li>
+    						</ul>
+    						<p>
+    						     Porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Vestibulum tincidunt ullamcorper eros eget luctus. Nulla eget porttitor libero... <a href="./blog-detail.html" class="link">Read More</a>
+    						</p>
+						</div>
+				    </div>
+				    <div class="col-12">
+                        <div class="card card-default mb-3 pb-3 wow fadeIn">
+    				        <a href="./blog-detail.html"><img src="./assets/images/office2.jpg" class="card-img-top img-fluid mb-2" alt="image"></a>
+    				        <a href="./blog-detail.html" class="float-right text-muted">03.08.2017</a> 
+    				        <h2><a href="">Your First Theme</a></h2>
+    				        <ul class="list-inline">
+    							<li class="list-inline-item author small wide-space text-uppercase"> <a href="#">Micheal Atwater</a> </li>
+    							<li class="list-inline-item comments small wide-space text-uppercase"> <i class="ion-ios-chatbubble-outline"></i> <a href="./blog-detail.html" class="link">1 Comments</a> </li>
+    							<li class="list-inline-item tag float-right font-weight-normal"> 
+    							    <i class="ion-ios-pricetag-outline"></i>
+    							    <!-- tags-->
+    							    <span><a class="badge badge-dark badge-pill" href="#">Creative</a></span> <span><a class="badge badge-dark badge-pill" href="">Design</a></span> 
+    							    <!-- / tags-->
+    							</li>
+    						</ul>
+    						<p>
+    						     Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Vestibulum tincidunt ullamcorper eros eget luctus. Nulla eget porttitor... <a href="./blog-detail.html" class="link">Read More</a>
+    						</p>
+						</div>
+				    </div>
+				    <!--/repeating items-->
+				    
+				    <div class="col-12">
+    				    <ul class="list-inline text-right">
+                            <li class="list-inline-item display-4"><a rel="nofollow" href="//twitter.com/ThemesGuide" title="Twitter"><i class="ion-social-twitter-outline"></i></a>&#xA0; </li>
+                            <li class="list-inline-item display-4"><a rel="nofollow" href="" title=""><i class="ion-social-instagram-outline"></i></a></li>
+                        </ul>
+                     </div>
+				</div>
+			</div>
+			<!--/blog list-->
+			
+			<div id="blog-sidebar" class="col-md-4">
+			    <div class="bg-alt p-3">
+    			    <div class="latest-posts mt-2">
+    			        <h2>Posts</h2>
+    					<div class="media">
+    						<span class="float-left py-2 pr-2"><img class="rounded-circle" src="//placehold.it/32/333?text=@" alt=""></span>
+    						<div class="text-truncate">
+    							<p class="text-secondary text-nowrap text-truncate mb-0"><a href="#">Another entry consecto for</a></p>
+    							<small class="text-uppercase">Jerry Suhs</small>
+    						</div>
+    					</div>
+    					<div class="media">
+    						<span class="float-left py-2 pr-2"><img class="rounded-circle" src="//placehold.it/32/333?text=@" alt=""></span>
+    						<div class="text-truncate">
+    							<p class="text-secondary text-nowrap text-truncate mb-0"><a href="#">No son lorem ipsum dolor</a></p>
+    							<small class="text-uppercase">Phil McKracken</small>
+    						</div>
+    					</div>
+    					<div class="media">
+    						<span class="float-left py-2 pr-2"><img class="rounded-circle" src="//placehold.it/32/333?text=@" alt=""></span>
+    						<div class="text-truncate">
+    							<p class="text-secondary text-nowrap text-truncate mb-0"><a href="#">Lorem ipsum dolor sit amet, consectetur</a></p>
+    							<small class="text-uppercase">Harry Pie</small>
+    						</div>
+    					</div>
+    				</div>
+    			    <hr>
+    			    <div class="blog-categories">
+    			        <h2>Topics</h2>
+    			        <ul class="nav flex-column text-secondary">
+                          <li class="nav-item">
+                            <a class="nav-link pl-0" href="#">Category 1</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link pl-0" href="#">Category 2</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link pl-0" href="#">Category 3</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link pl-0" href="#">Category .</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link pl-0" href="#">Category .</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link pl-0" href="#">Category x</a>
+                          </li>
+                        </ul>
+    			    </div>
+    			    <hr>
+    			    <div class="blog-tags">
+    			        <h2 class="bg-alt">Tags</h2>
+    			        <div class="text-uppercase font-weight-normal">
+        			        <a class="badge badge-dark badge-pill" href="#">Case Study</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Work</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Creative</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Design</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Tools</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Responsive</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">News</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Funny</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Planning</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Coding</a> 
+        			        <a class="badge badge-dark badge-pill" href="#">Trends</a> 
+    			        </div>
+    			    </div>
+    			    <hr>
+    			    <div class="sidebar-ads row">
+    			        <div class="col-md-12 pb-2">
+    			            <h2>Sponsors</h2>
+    			        </div>
+    			        <div class="col-6 col-md-12 pb-3">
+    			            <img src="//placehold.it/250x150/FFF?text=AD" class="mx-auto d-block img-fluid" alt="image">
+    			        </div>
+    			        <div class="col-6 col-md-12 pb-3">
+    			            <img src="//placehold.it/250x150/333?text=AD" class="mx-auto d-block img-fluid" alt="image">
+    			        </div>
+    			        <div class="col-6 col-md-12 pb-3">
+    			            <img src="//placehold.it/250x150/FFF?text=AD" class="mx-auto d-block img-fluid" alt="image">
+    			        </div>
+    			        <div class="col-6 col-md-12 pb-3">
+    			            <img src="//placehold.it/250x150/333?text=AD" class="mx-auto d-block img-fluid" alt="image">
+    			        </div>
+    			    </div>
+    			    <hr>
+                    <p class="text-secondary">
+                        Duis pharetra codeply varius quam sit amet vulputate. Quisque Sed and Codeply editor ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                        accumsan. Aliquam in felis sit amet augue.
+                    </p>
+                </div>
+			</div><!--/sidebar-->
+		</div>
+	</div>
+</div>
+
+<section class="bg-alt">
+    <div class="container pt-2">
+        <div class="row wow fadeInUp pt-4">
+            <div class="col-lg-7 col-md-6 col-12">
+                <div class="card card-default h-100">
+                    <div class="card-img-top card-img-top-250 card-zoom">
+                        <a href="./blog-detail.html"><img src="./assets/images/office4.jpg" class="mx-auto img-fluid" alt="image"></a>
+                    </div>
+                    <div class="card-body py-3">
+                        <h6 class="text-uppercase small">Call to Action</h6>
+                        <h3 class="card-title text-truncate">Start Thinking in the Right Direction</h3>
+                        <a href="./blog-detail.html" class="btn btn-outline-secondary btn-lg mt-2 text-uppercase">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="card card-default h-100">
+                    <div class="card-img-top card-img-top-250 card-zoom">
+                        <a href="./blog-detail.html"><img src="./assets/images/mercantile_500_0001.png" class="mx-auto img-fluid" alt="image"></a>
+                    </div>
+                    <div class="card-body py-3">
+                        <h6 class="text-uppercase small">Call to Action</h6>
+                        <h3 class="card-title text-truncate">Rhode Island Micro-Business Boom</h3>
+                        <a href="./blog-detail.html" class="btn btn-outline-secondary btn-lg mt-2 text-uppercase">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row wow fadeInUp pt-4">
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="card card-default h-100">
+                    <div class="card-img-top card-img-top-250 card-zoom">
+                        <a href="./blog-detail.html"><img src="./assets/images/mercantile_500_0003.png" class="mx-auto img-fluid" alt="image"></a>
+                    </div>
+                    <div class="card-body py-3">
+                        <h6 class="text-uppercase small">Call to Action</h6>
+                        <h3 class="card-title text-truncate">Not What You Expect</h3>
+                        <a href="./blog-detail.html" class="btn btn-outline-secondary btn-lg mt-2 text-uppercase">Read</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-12">
+                <div class="card card-default h-100">
+                    <div class="card-img-top card-img-top-250 card-zoom">
+                        <a href="./blog-detail.html"><img src="./assets/images/office1.jpg" class="mx-auto img-fluid" alt="image"></a>
+                    </div>
+                    <div class="card-body py-3">
+                        <h6 class="text-uppercase small">Call to Action</h6>
+                        <h3 class="card-title text-truncate">Collaborative Workspaces Come of Age</h3>
+                        <a href="./blog-detail.html" class="btn btn-outline-secondary btn-lg mt-2 text-uppercase">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+    </div>
+</section>
+
+<footer id="footer" class="pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="display-2 mb-2">Okay, Boss.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <h6 class="text-uppercase">Information</h6>
+                <ul class="list-unstyled">
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./faq.html">FAQ&apos;s</a></li>
+                    <li><a href="./portfolio.html">Gallery</a></li>
+                    <li><a href="./clients.html">Clients</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 column">
+                <h6 class="text-uppercase">About</h6>
+                <ul class="list-unstyled">
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./about.html">Our Mission</a></li>
+                    <li><a href="./legal.html">Privacy Policy</a></li>
+                    <li><a href="./legal.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 column">
+                <h6 class="text-uppercase">Stay Posted</h6>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" title="Enter your email. No spam, we promise!" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary text-uppercase small" data-toggle="modal" data-target="#alertModal" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-2 ml-lg-auto col-md-3 ml-md-0 text-right">
+                <h6 class="text-uppercase">Jobs</h6>
+                <p><em><a href="">We&apos;re looking for great talent. Browse the job openings.</a></em></p>
+            </div>
+            <div class="col-12 text-md-right text-center">
+                <br>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a rel="nofollow" href="//twitter.com/ThemesGuide" title="Twitter"><i class="ion-social-twitter-outline"></i></a>&#xA0; </li>
+                    <li class="list-inline-item"><a rel="nofollow" href="" title=""><i class="ion-social-instagram-outline"></i></a>&#xA0; </li>
+                    <li class="list-inline-item"><a rel="nofollow" href="" title="Facebook"><i class="ion-social-facebook-outline"></i></a>&#xA0; </li>
+                    <li class="list-inline-item"><a rel="nofollow" href="" title="Dribbble"><i class="ion-social-dribbble-outline"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr class="light">
+        <div class="text-center text-normal">
+            <a href="http://themes.guide">Made by Themes.guide in Little Rhody <i class="ion-location"></i></a>
+        </div>
+    </div>
+</footer>
+
+<div id="galleryModal" class="modal fade loaded-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="loaded-caption text-center mb-0"></h3>
+                <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                  <span aria-hidden="true">&#xD7;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0 text-center bg-alt">
+                <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="loaded-image mx-auto img-fluid">
+            </div>
+            <div class="modal-footer text-center">
+                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="profileModal" class="modal fade loaded-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body py-3 text-center">
+                <small class="text-uppercase text-wide">Profile</small>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="loaded-caption"></h3>
+                    </div>
+                    <div class="col-sm-6 mx-sm-auto">
+                        <img src="//placehold.it/300x500/222?text=..." id="profileImage" class="loaded-image mx-auto rounded img-fluid">
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary btn-lg" data-dismiss="modal" aria-hidden="true">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-5">
+                <h1 class="text-center">About</h1>
+                <hr class="accent">
+                <p class="text-normal text-justify pt-4">
+                    Here&apos;s a custom Bootstrap 4 theme to give your next project a beautiful start. 
+                    Bodeo isn&apos;t just Bootstrap 4 &quot;compatible&quot;, it&apos;s completely built on Bootstrap 4&apos;s 
+                    responsive design and flexbox components.
+                    This multi-purpose theme and the included templates are based on HTML5 &amp; CSS3 standards to ensure consistency and cross-browser support.
+                    Bodeo is intended for designers &amp; developers that want a complete Bootstrap 4 ready 
+                    solution with full breadth &amp; depth of features. The theme can be customized using CSS or SASS, and it&apos;s modular structure
+                    make it easy to reuse specific pages and components.
+                    <ul class="list-unstyled pb-3">
+                        <li>High-contrast color palette</li>
+                        <li>Rokkitt sans-serif font</li>
+                        <li>Big bold custom accent color</li>
+                    </ul>
+                </p>
+                <p class="lead"><a href="http://themes.guide" class="link">Thanks for taking a look!</a></p>
+                <button class="btn btn-primary btn-lg float-right" data-dismiss="modal" aria-hidden="true"> OK </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--scripts loaded here-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

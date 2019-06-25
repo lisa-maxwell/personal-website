@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bodeo - Layout</title>
+    <meta name="description" content="A modular template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-custom.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/ionicons.css?v=2.0.1" media="none" onload="this.media=&apos;all&apos;">
+        
+    <!-- A multi-column layout for multiple cards or content blocks in masonry pattern -->
+</head>
+<body class="preload">
+<!-- navbar -->
+<nav id="topNav" class="navbar navbar-default mb-3 navbar-expand-lg fixed-top" data-toggle="affix">
+    <!-- this toggler only displays on offcanvas layout -->
+    <a href="#" class="navbar-toggler-anim toggler-offcanvas my-auto collapsed border-0 mr-2" data-toggle="collapse" data-target="#offcanvasNavbar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <!-- text brand or logo image goes here -->
+    <a class="navbar-brand page-scroll text-uppercase wide-space link" href="./">
+        Bodeo
+    </a>
+    <button class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="collapse navbar-collapse border-0" id="collapsingNavbar">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#one" href="./#one">Cards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#two" href="./#two">Flexbox</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#three" href="./#three">Content</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#blog" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#five" href="./#five">Masonry</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-target="#last" href="./#last">More</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown dropdown-hover megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages &amp; Layouts<span class="caret"></span></a>
+                <div class="dropdown-menu dropdown-menu-right pt-1 pb-2">
+                    <div class="row mx-1">
+                        <div class="col-12">
+                            <span class="close d-sm-none" data-toggle="dropdown">&#xD7;</span>
+                        </div>
+                        <ul class="col-6 list-unstyled small" role="menu">
+                            <li class="text-uppercase text-muted text-wide pt-2 pb-1">Pages</li>
+                            <li><a class="link" href="about.html">About</a></li>
+                            <li><a class="link" href="./app">Angular App</a></li>
+                            <li><a class="link" href="blog.html">Blog / Articles</a></li>
+                            <li><a class="link" href="blog-detail.html">Blog Post</a></li>
+                            <li><a class="link" href="contact.html">Contact / Map</a></li>
+                            <li><a class="link" href="clients.html">Clients / Testimonial</a></li>
+                            <li><a class="link" href="demos.html">Demos</a></li>
+                            <li><a class="link" href="error-404.html">Error 404</a></li>
+                            <li><a class="link" href="faq.html">FAQ&apos;s</a></li>
+                            <li><a class="link" href="features.html">Features</a></li>
+                            <li><a class="link" href="login.html">Login / Register</a></li>
+                            <li><a class="link" href="legal.html">Privacy Policy</a></li>
+                            <li><a class="link" href="pricing.html">Pricing</a></li>
+                            <li><a class="link" href="products.html">Products</a></li>
+                            <li><a class="link" href="product-detail.html">Product Detail</a></li>
+                            <li><a class="link" href="results.html">Search Results</a></li>
+                            <li><a class="link" href="cart.html">Shopping Cart</a></li>
+                            <li><a class="link" href="legal.html">Terms &amp; Conditions</a></li>
+                            <li><a class="link" href="user-profile.html">User Profile</a></li>
+                        </ul>
+                        <ul class="col-6 list-unstyled small text-right" role="menu">
+                            <li class="text-uppercase text-muted text-wide pt-2 pb-1">Specialized</li>
+                            <li><a class="link" href="dashboard.html">Dashboard</a></li>
+                            <li><a class="link" href="invoice.html">Invoice</a></li>
+                            <li><a class="link" href="pg-medical.html">Medical / Dental</a></li>
+                            <li><a class="link" href="portfolio.html">Portfolio</a></li>
+                            <li><a class="link" href="pg-restaurant.html">Restaurant Menu</a></li>
+                            <li class="text-uppercase text-muted text-wide pt-3 pb-1">Layouts</li>
+                            <li><a class="link" href="./">Single page</a></li>
+                            <li><a class="link" href="layout-video.html">Video background</a></li>
+                            <li><a class="link" href="layout-image.html">Photo background</a></li>
+                            <li><a class="link" href="layout-slider.html">Full-screen slider</a></li>
+                            <li><a class="link" href="layout-2-col.html">2-column</a></li>
+                            <li><a class="link" href="layout-3-col.html">3-column</a></li>
+                            <li><a class="link" href="layout-full.html">Full width</a></li>
+                            <li><a class="link" href="layout-sidebar.html">Sidebar nav</a></li>
+                            <li><a class="link" href="layout-offcanvas.html">Off-canvas nav</a></li>
+                            <li><a class="link" href="layout-grid.html">Grid / Gallery</a></li>
+                            <li><a class="link" href="layout-masonry.html">Masonry</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown dropdown-hover megamenu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Elements<span class="caret"></span></a>
+                <div class="dropdown-menu dropdown-menu-right pt-1 pb-2">
+                    <div class="row mx-1">
+                        <div class="col-12">
+                            <span class="close d-sm-none" data-toggle="dropdown">&#xD7;</span>
+                        </div>
+                        <ul class="col-md-6 col-6 list-unstyled small" role="menu">
+                            <li class="text-uppercase text-wide pt-2 pb-1">
+                                <a class="link text-muted" href="elements.html">Elements</a>
+                            </li>
+                            <li><a class="link" href="./elements.html#accordions">Accordion &amp; Collapsible</a></li>
+                            <li><a class="link" href="./elements.html#alerts">Alerts / Notifications</a></li>
+                            <li><a class="link" href="./elements.html#badges">Badges &amp; Tags</a></li>
+                            <li><a class="link" href="./elements.html#buttons">Buttons &amp; Colors</a></li>
+                            <li><a class="link" href="./elements.html#carousels">Carousel / Sliders</a></li>
+                            <li><a class="link" href="./elements.html#comments">Comments</a></li>
+                            <li><a class="link" href="./layout-grid.html">Gallery</a></li>
+                            <li><a class="link" href="./elements.html#jumbotron">Jumbotron</a></li>
+                            <li><a class="link" href="./elements.html#lists">Lists</a></li>
+                            <li><a class="link" href="./layout-masonry.html">Masonry</a></li>
+                            <li><a class="link" href="./elements.html#modals">Modal &amp; Overlay</a></li>
+                            <li><a class="link" href="./elements.html#progress">Progress</a></li>
+                            <li><a class="link" href="./elements.html#tables">Tables</a></li>
+                            <li><a class="link" href="./elements.html#tabs">Tabs</a></li>
+                            <li><a class="link" href="./elements.html#imageGrids">Thumbnails &amp; Images</a></li>
+                        </ul>
+                        <ul class="col-md-6 col-6 list-unstyled small text-right" role="menu">
+                            <li class="text-uppercase text-wide pt-2 pb-1">
+                                <a class="link text-muted" href="cards.html">Cards</a>
+                            </li>
+                            <li><a class="link" href="cards.html#card_feature">Image card</a></li>
+                            <li><a class="link" href="cards.html#card_list">List card</a></li>
+                            <li><a class="link" href="cards.html#card_contacts">Contacts card</a></li>
+                            <li><a class="link" href="cards.html#card_thumbnails">Thumbnails card</a></li>
+                            <li><a class="link" href="cards.html#card_product">Product card</a></li>
+                            <li><a class="link" href="cards.html#card_profile">Profile card</a></li>
+                            <li><a class="link" href="cards.html#card_stats">Stats card</a></li>
+                            <li class="text-uppercase text-wide pt-3 pb-1">
+                                <a class="link text-muted" href="elements.html#forms">Forms</a>
+                            </li>
+                            <li><a class="link" href="./elements.html#formLogin">Login form</a></li>
+                            <li><a class="link" href="./elements.html#formRegister">Sign-up form</a></li>
+                            <li><a class="link" href="./elements.html#formChangePassword">Password change form</a></li>
+                            <li><a class="link" href="./elements.html#formResetPassword">Password reset form</a></li>
+                            <li><a class="link" href="./elements.html#formUserEdit">User info form</a></li>
+                            <li><a class="link" href="./elements.html#formContact">Contact form</a></li>
+                            <li><a class="link" href="./elements.html#formPayment">Payment form</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" data-toggle="modal" title="A Bootstrap theme" href="#aboutModal">
+                    About
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- /navbar -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-4">
+                            <!-- masonry card columns -->
+                <div class="card-columns mt-2">
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/pr-sample5.jpg" alt="Card image" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body pt-2 pl-1">
+                            <h6 class="small text-wide">Profile</h6>
+                            <h2>
+                                <a href="">Cary Claude-Mills</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/mercantile_500_0006.png" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body pt-2 pb-2 pl-1">
+                            <h6 class="small text-wide">Call to Action</h6>
+                            <h2 class="card-title"><a href="">Micro-Business Boom</a></h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/mercantile_500_0002.png" alt="Card image" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body pt-2 pl-1">
+                            <h6 class="small text-wide">Development</h6>
+                            <h2>
+                                <a href="">Excellence is Afoot</a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/office6.jpg" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body py-2 pl-1">
+                            <h6 class="small text-wide">Collaboration</h6>
+                            <h2 class="card-title"><a href="">Clever Workspaces</a></h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-body pt-2 pb-2 bg-alt">
+                            <p class="text-secondary">
+                                Duis pharetra codeply varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt codeply nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                accumsan. Aliquam in felis sit amet augue.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/mercantile_500_0000.png" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body pl-1 py-2">
+                            <h6 class="text-wide small">Resonate</h6>
+                            <h2 class="card-title"><a href="">Read the Manual</a></h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-body pt-2 pb-2 bg-alt">
+                            <p class="text-secondary">
+                                Duis pharetra codeply varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt codeply nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
+                                accumsan. Aliquam in felis sit amet augue.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/office6.jpg" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body pt-2 pl-1">
+                            <h6 class="small text-wide">Frontend</h6>
+                            <h2 class="card-title"><a href="">Making Sense of CSS</a></h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/office4.jpg" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body py-2 pl-1">
+                            <h6 class="small text-wide">Call to Action</h6>
+                            <h2 class="card-title"><a href="">Not What You Expect</a></h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/mercantile_500_0004.png" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body pt-2 pb-2 pl-1">
+                            <h6 class="small text-wide">Groovy</h6>
+                            <h2 class="card-title"><a href="">Bikes Are Hip</a></h2>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-body pt-2 pb-2 bg-alt">
+                            <p class="text-secondary">
+                                Wolf-moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card card-default mb-2">
+                        <div class="card-img-top wow fadeIn">
+                            <a href=""><img src="./assets/images/mercantile_500_0008.png" class="mx-auto img-fluid d-block"></a>
+                        </div>
+                        <div class="card-body pl-1 py-2">
+                            <h6 class="text-wide small">Desire</h6>
+                            <h2 class="card-title"><a href="">Essential Must Haves</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- /masonry card columns -->
+        </div>
+    </div>
+</div>
+<footer id="footer" class="pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="display-2 mb-2">Okay, Boss.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <h6 class="text-uppercase">Information</h6>
+                <ul class="list-unstyled">
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./faq.html">FAQ&apos;s</a></li>
+                    <li><a href="./portfolio.html">Gallery</a></li>
+                    <li><a href="./clients.html">Clients</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 column">
+                <h6 class="text-uppercase">About</h6>
+                <ul class="list-unstyled">
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./about.html">Our Mission</a></li>
+                    <li><a href="./legal.html">Privacy Policy</a></li>
+                    <li><a href="./legal.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 column">
+                <h6 class="text-uppercase">Stay Posted</h6>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" title="Enter your email. No spam, we promise!" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary text-uppercase small" data-toggle="modal" data-target="#alertModal" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-2 ml-lg-auto col-md-3 ml-md-0 text-right">
+                <h6 class="text-uppercase">Jobs</h6>
+                <p><em><a href="">We&apos;re looking for great talent. Browse the job openings.</a></em></p>
+            </div>
+            <div class="col-12 text-md-right text-center">
+                <br>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a rel="nofollow" href="//twitter.com/ThemesGuide" title="Twitter"><i class="ion-social-twitter-outline"></i></a>&#xA0; </li>
+                    <li class="list-inline-item"><a rel="nofollow" href="" title=""><i class="ion-social-instagram-outline"></i></a>&#xA0; </li>
+                    <li class="list-inline-item"><a rel="nofollow" href="" title="Facebook"><i class="ion-social-facebook-outline"></i></a>&#xA0; </li>
+                    <li class="list-inline-item"><a rel="nofollow" href="" title="Dribbble"><i class="ion-social-dribbble-outline"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr class="light">
+        <div class="text-center text-normal">
+            <a href="http://themes.guide">Made by Themes.guide in Little Rhody <i class="ion-location"></i></a>
+        </div>
+    </div>
+</footer>
+
+<div id="galleryModal" class="modal fade loaded-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="loaded-caption text-center mb-0"></h3>
+                <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                  <span aria-hidden="true">&#xD7;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0 text-center bg-alt">
+                <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="loaded-image mx-auto img-fluid">
+            </div>
+            <div class="modal-footer text-center">
+                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="profileModal" class="modal fade loaded-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body py-3 text-center">
+                <small class="text-uppercase text-wide">Profile</small>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="loaded-caption"></h3>
+                    </div>
+                    <div class="col-sm-6 mx-sm-auto">
+                        <img src="//placehold.it/300x500/222?text=..." id="profileImage" class="loaded-image mx-auto rounded img-fluid">
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary btn-lg" data-dismiss="modal" aria-hidden="true">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-5">
+                <h1 class="text-center">About</h1>
+                <hr class="accent">
+                <p class="text-normal text-justify pt-4">
+                    Here&apos;s a custom Bootstrap 4 theme to give your next project a beautiful start. 
+                    Bodeo isn&apos;t just Bootstrap 4 &quot;compatible&quot;, it&apos;s completely built on Bootstrap 4&apos;s 
+                    responsive design and flexbox components.
+                    This multi-purpose theme and the included templates are based on HTML5 &amp; CSS3 standards to ensure consistency and cross-browser support.
+                    Bodeo is intended for designers &amp; developers that want a complete Bootstrap 4 ready 
+                    solution with full breadth &amp; depth of features. The theme can be customized using CSS or SASS, and it&apos;s modular structure
+                    make it easy to reuse specific pages and components.
+                    <ul class="list-unstyled pb-3">
+                        <li>High-contrast color palette</li>
+                        <li>Rokkitt sans-serif font</li>
+                        <li>Big bold custom accent color</li>
+                    </ul>
+                </p>
+                <p class="lead"><a href="http://themes.guide" class="link">Thanks for taking a look!</a></p>
+                <button class="btn btn-primary btn-lg float-right" data-dismiss="modal" aria-hidden="true"> OK </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--scripts loaded here-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

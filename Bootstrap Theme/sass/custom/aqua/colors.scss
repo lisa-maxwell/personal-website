@@ -1,0 +1,81 @@
+
+//---------------------------------
+// color variables
+//---------------------------------
+$white:			#ffffff;
+$black:			#151515;
+$yellow:		#fcf113;
+$blue:			#688a9e;
+$red:           #dc3545;
+
+$gray-dark:		#333334;
+$gray:			#555556;					
+$gray-light:	#88888f;
+$gray-lighter:	#d0d0d0;
+$gray-lightest:	#fcfcfc;
+
+// colors - theme
+$brand-accent:  aqua;
+$brand-alt:     #f0f4f6;
+
+// colors - bootstrap 4 variables
+$body-bg:       lighten($brand-alt,3%);
+$inverse-bg:    $gray-light;
+$inverse-color: $gray;
+
+$brand-danger:  $red;
+$brand-primary: $black;
+$brand-success: #b4b4b8; 
+$brand-info:    $blue;
+$brand-warning: $yellow;
+
+$theme-colors: (
+  primary: $black,
+  secondary: $gray-500,
+  success: #b4b4b8,
+  info: $blue,
+  warning: darken($yellow,3%),
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+);
+												
+$navbar-light-color:rgba($black,.8) !default;
+
+$link-color:			darken(theme-color('primary'),50%);
+$link-hover-color:		lighten($link-color,20%);
+$text-muted:			rgba(170,170,170,0.8);
+
+$btn-warning-color:		$black;
+$btn-secondary-bg:		rgba($gray-lightest,0.6);
+$btn-secondary-border:	rgba($gray-light,0.9);
+$btn-secondary-color:	$gray;
+
+$state-primary-text:	lighten(theme-color('primary'),60%);
+$state-primary-bg:  	darken(theme-color('primary'),10%);
+$state-success-text:	lighten(theme-color('success'),60%);
+$state-success-bg:  	darken(theme-color('success'),10%);
+$state-info-text:   	darken(theme-color('info'),20%);
+$state-info-bg:     	lighten(theme-color('info'),40%);
+$state-warning-text:	$gray-dark;
+$state-warning-bg:  	lighten(theme-color('warning'),5%);
+
+// colors - inputs
+$input-bg:               $gray-lightest;
+$input-color:            $black;
+$input-color-focus:      theme-color('primary');
+$input-border-color:     transparent;
+$input-border-focus:     $gray-light;
+$input-group-addon-bg:   lighten($gray-lighter,15%);
+$input-color-placeholder:$gray-lighter;
+
+// colors - misc
+$card-border-color:			lighten($gray-lighter,10%);
+$progress-bg:				rgba($gray-lighter,.5);	
+$badge-warning-bg:			darken(theme-color('warning'),5%);
+$blockquote-border-color:	#eeeeee;
+
+$pagination-hover-color:	rgba(240,240,240,0.6);
+$pagination-border-color:	rgba(150,150,155,0.5);
+$pagination-disabled-border:rgba(150,150,155,0.3);
+$pagination-hover-border:	rgba(150,150,155,0.7);

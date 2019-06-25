@@ -1,0 +1,150 @@
+
+<div class="container" data-ng-controller="productsCtrl">
+
+    <!-- product detail -->
+    <div class="row">
+        <div class="col-md-9">
+            <h1 data-ng-bind="product.name" class="mt-2">
+                 <!-- product name -->
+            </h1>
+            <div class="row">
+                <div class="col-lg-5 product-detail-img">
+                    <div class="card-zoom my-1">
+                        <a href="#galleryModal" data-toggle="modal" data-image="{{product.image}}" data-caption="{{product.name}}">
+                            <img data-ng-src="{{product.image}}" class="mx-auto img-fluid" alt="Product detail image">
+                        </a>
+                    </div>
+                    <h6 class="small text-wide text-uppercase"><a href data-ng-bind="product.category"><!-- category --></a></h6>
+                </div>
+                <div class="col-lg-7 product-detail">
+                    <p class="lead" data-ng-bind="product.desc">
+                        <!-- description -->
+                    </p>
+                    <h2 data-ng-bind="product.cost"><!-- cost --></h2>
+                    <a href="../cart.html" class="btn btn-lg btn-primary mt-1">Add to Cart</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12 pt-2">
+                    <ul class="nav nav-tabs mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase small active" href="" data-target="#tab1" data-toggle="tab">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase small" href="" data-target="#tab2" data-toggle="tab">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase small" href="" data-target="#tab3" data-toggle="tab">Installation</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content my-3">
+                        <div class="tab-pane active show" id="tab1">
+                            <div class="row mt-2">
+                                <div class="col-md-3 col-12 text-center text-md-left">
+                                    <h5 class="text-uppercase text-dark">
+                                        <span class="text-primary"><i class="ion-ios-star"></i> <i class="ion-ios-star"></i> <i class="ion-ios-star"></i> <i class="ion-ios-star-half"></i></span>
+                                    </h5>
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <div>
+                                        <h6 class="small text-wide"><span class="text-dark">08.14.2016</span></h6>
+                                        <p class="">
+                                            Muy bien! Excellante bueno. Bicycle rights, viral fap cronut leggings squid chillwave.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-3 col-12 text-center text-md-left">
+                                    <h5 class="text-uppercase text-dark">
+                                        <span class="text-primary"><i class="ion-ios-star"></i> <i class="ion-ios-star"></i> </span>
+                                    </h5>
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <div>
+                                        <h6 class="small text-wide"><span class="text-dark">08.04.2016</span></h6>
+                                        <p class="">
+                                            Es okay, but no bueno when try to blah. Bicycle rights, viral fap chillwave.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-12 small text-right">
+                                    Did you purchase this product? <button class="btn btn-sm btn-outline-secondary" data-toggle="collapse" data-target="#formReview">Write a Review</button>
+                                </div>
+                                <div class="col-12">
+                                    <form id="formReview" class="collapse">
+                                        <div class="form-group">
+                                            <label for="reviewNotes">Your Review</label>
+                                            <textarea class="form-control" id="reviewNotes" required></textarea>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-6 col-12">
+                                                <h2>
+                                                    <i class="ion-ios-star-outline fa fa-star-o"></i> 
+                                                    <i class="ion-ios-star-outline fa fa-star-o"></i> 
+                                                    <i class="ion-ios-star-outline fa fa-star-o"></i> 
+                                                    <i class="ion-ios-star-outline fa fa-star-o"></i> 
+                                                    <i class="ion-ios-star-outline fa fa-star-o"></i>
+                                                </h2>
+                                            </div>
+                                            <div class="col-sm-6 col-12 text-sm-right">
+                                                <button class="btn btn-sm btn-danger" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            <p>
+                                Excellante bueno. Bicycle rights, viral fap cronut leggings squid chillwave.
+                                Nullam sapien massa, aliquam in cursus ut, ullamcorper in tortor.
+                            </p>
+                            <p>
+                                Cronut leggings squid chillwave for more infrms.
+                                Nullam sapien massa, aliquam in cursus ut, ullamcorper in tortor. But no
+                                boca grande vaca ipsum lota.
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            <p>
+                                Foo am sapien massa, aliquam in cursus ut, ullamcorper in tortor.
+                                Bicycle rights, viral fap cronut leggings squid chillwave for more infrms.
+                                Nullam sapien massa, aliquam in cursus it.
+                            </p>
+                            <p>
+                                Wiral fap cronut leggings squid chillwave for more infrms.
+                                Nullam sapien massa, aliquam in cursus ut, ullamcorper in tortor. But no
+                                boca grande vaca ipsum lota.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 bg-alt pt-3">
+            <div class="card card-default">
+                <div class="card-body">
+                    <h6>X567.a</h6> Nullam sapien massa, aliquam in cursus ut, ullamcorper in tortor.
+                </div>
+            </div>
+            <div class="card card-default">
+                <div class="card-body">
+                    <h6>AMX 50</h6> Foo am sapien massa, aliquam in cursus ut, ullamcorper in tortor.
+                </div>
+            </div>
+            <div class="card card-default mb-2">
+                <div class="card-body px-0 bg-alt">
+                    <h4 class="text-secondary">Our Return Policy</h4>
+                    <p class="text-secondary">
+                       If you are not completely content with the product you can return it within 90 days of purchase for a full refund, store credit or exchange.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /product detail -->
+    
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodeo - Layout Off-canvas</title>
+    <meta name="description" content="A modular template">
+    <link rel="stylesheet" href="css/bootstrap-custom.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/ionicons.css?v=2.0.1" media="none" onload="this.media=&apos;all&apos;">
+        
+    <!-- A layout with off-canvas overlay multi-level sidebar menu on the left -->
+</head>
+<body class="preload">
+<div class="wrapper-offcanvas">
+    <div class="inc_" data-template="./partials/p_header.html"></div>
+    <div class="sidebar sidebar-offcanvas sidebar-dark collapse width" id="offcanvasNavbar">
+        <div class="inc_" data-template="./partials/p_sidebar_menu.html"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- main container -->
+            <main class="col-md-12 px-0 main">
+                
+                <!-- this sidebar layout work best with full width in the main container -->
+                <div class="inc_" data-template="./partials/p_content_full.html"></div>
+                
+            </main>
+        </div>
+    </div>
+    <div class="inc_" data-template="./partials/p_footer.html"></div>
+</div>
+
+<!--scripts loaded here-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

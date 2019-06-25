@@ -1,0 +1,9 @@
+body {
+  background-image: url("newbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.community-involve {
+  padding-bottom: 25px;
+}

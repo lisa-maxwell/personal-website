@@ -1,0 +1,78 @@
+
+//---------------------------------
+// color variables - 
+// black and white are inverted to
+// create a dark theme
+//---------------------------------
+$white:			#151516;
+$black:			#e7e7e7;
+$yellow:		#fcf113;
+$blue:			#688a9e;
+$red:       #dc3545;
+$gray:			#d0d0d0;
+
+$gray-900: #f8f9fa;
+$gray-800: #e9ecef;
+$gray-700: #dee2e6;
+$gray-600: #ced4da;
+$gray-500: #adb5bd;
+$gray-400: #6c757d;
+$gray-300: #495057;
+$gray-200: #343a40;
+$gray-100: #212529;
+
+// colors - theme
+$brand-accent:  #57798d;
+$brand-alt:     #181817;
+
+// colors - bootstrap 4 variables
+$brand-danger:  $red;
+$brand-primary: $brand-accent;
+$brand-warning: $yellow;
+$brand-inverse: $white;
+$inverse-bg:    $white;
+$inverse-color: $gray-400;
+
+$theme-colors: (
+  primary: $black,
+  secondary: $gray-500,
+  success: #b4b4b8,
+  info: $blue,
+  warning: darken($yellow,3%),
+  danger: $red,
+  light: $gray-200,
+  dark: $gray-800
+);
+
+$body-color:            $gray-500;		
+$dropdown-bg:           $gray-300;
+$navbar-light-color:    rgba($black,.8) !default;
+
+$link-color:			darken($gray-400,50%);
+$link-hover-color:		lighten($link-color,20%);
+$text-muted:			rgba(190,190,190,0.8);
+
+$btn-warning-color:		darken(theme-color('warning'),70%);
+$btn-secondary-bg:		rgba(250,250,250,0.6);
+$btn-secondary-border:	rgba(lighten($gray-700,10%),.9);
+$btn-secondary-color:	$gray;
+
+// colors - inputs
+$input-bg:               darken($white,2%);
+$input-color:            $black;
+$input-color-focus:      lighten($black,5%);
+$input-border-color:     transparent;
+$input-border-focus:     $gray-300;
+$input-group-addon-bg:   lighten($gray-400,15%);
+$input-color-placeholder:$gray-400;
+
+// colors - misc
+$card-border-color:			rgba(lighten($gray-400,10%),.9);
+$progress-bg:				rgba($gray-400,.5);	
+$badge-warning-bg:			darken(theme-color('warning'),5%);
+$blockquote-border-color:	#eeeeee;
+
+$pagination-hover-color:	rgba(230,230,230,0.5);
+$pagination-border-color:	rgba(150,150,155,0.5);
+$pagination-disabled-border:rgba(150,150,155,0.3);
+$pagination-hover-border:	rgba(150,150,155,0.7);

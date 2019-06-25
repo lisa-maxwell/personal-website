@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodeo - AngularJS App</title>
+    <meta name="description" content="An example AngularJS app" />
+    <link rel="stylesheet" href="../css/bootstrap-custom.css" />
+    <link rel="stylesheet" href="../css/animate.min.css" />
+    <link rel="stylesheet" href="../css/ionicons.css?v=2.0.1" />
+</head>
+<body data-ng-app="myApp" data-ng-controller="appCtrl">
+
+<!-- navbar -->
+<nav id="topNav" class="navbar navbar-default fixed-top mb-3 navbar-expand-md" data-toggle="affix">
+    <div class="container">
+        <button class="navbar-toggler collapsed navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </button>
+        <div class="d-flex">
+            <!-- text brand or logo image goes here -->
+            <a class="navbar-brand page-scroll text-uppercase wide-space link" href="../">
+                Bodeo
+            </a>
+        </div>
+        <div class="collapse navbar-collapse border-0" id="collapsingNavbar">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link link" href="./">App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#/gallery">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#/posts">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#/products">Shop</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link link pr-0" href="#/messages">Messages<sup class="badge badge-info badge-pill small" title="notify count">2</sup></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link pr-0" href="#/users">Profiles</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- /navbar -->
+
+<div ng-view></div>
+
+<!--scripts loaded here-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+<script src="../js/wow.min.js"></script>
+
+<!--angularjs from cdn-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.1/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.1/angular-route.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.1/angular-sanitize.min.js"></script>
+
+<!--angularjs app-->
+<script src="app.js"></script>
+</body>
+</html>

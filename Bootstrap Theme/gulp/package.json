@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gulp": ">=3.x",
+    "gulp-concat": "~2.6.x",
+    "gulp-sass": ">=3.x",
+    "merge-stream": ">=1.x"
+  }
+}

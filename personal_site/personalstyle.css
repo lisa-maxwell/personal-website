@@ -1,0 +1,49 @@
+body {
+  background-image: url("newbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-type: bold;
+  font-family: Verdana;
+}
+
+.silk {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.fleurix-shot {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about_section {
+  font-size: 15px;
+  color: gray;
+  font-family: "Lucida Console";
+}
+
+.what_section {
+  font-size: 15px;
+  color: gray;
+  font-family: "Lucida Console";
+}
+
+.col-md-6 {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  font-family: Verdana;
+  font-size:25px;
+  text-align: center;
+}

@@ -1,0 +1,53 @@
+// Bootstrap overrides
+//
+// Copied from bootstrap `_variables.scss` to this file to override default values
+// 
+// Custom theme variables for Bootstrap 4.1
+
+$brand-accent: #fcf113 !default;
+$brand-alt: #f0f0f0 !default;
+
+//---------------------------------
+// theme variables
+//---------------------------------
+
+$hr-border-width: 5px;
+
+$navbar-toggler-padding-x: 4px;
+$navbar-toggler-padding-y: 12px;
+$navbar-toggler-font-size: larger;
+
+// round the radii
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+
+// fonts
+$font-weight-bold:      600;
+$headings-font-weight:  600;
+$headings-font-family:  'Rokkitt','Georgia',serif;
+$font-size-h1:          3.2rem;
+$font-size-h2:          2.2rem;
+
+$close-font-size:       1.7rem;
+$close-font-weight:     300;
+$close-color:           #151515;
+$close-text-shadow:     0 0 0 #fff;
+
+// spacing
+$spacer: 1.1rem;
+$spacer-y: 1.4rem;
+									 
+// wider modals
+$modal-content-border-color: transparent;
+$modal-dialog-sm-up-margin-y: 1px;
+
+// pimp my forms
+$input-padding-x:        .3rem;
+$input-padding-y:        .75rem;
+$input-line-height:      1.35;
+$input-btn-border-width: 1px;
+
+$badge-font-weight:      400;
+
+$progress-border-radius: 8px;

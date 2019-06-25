@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="description" content="A modular template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Documentation (you are here) -->
+</head>
+<body>
+    <h1>Documentation</h1>
+    <h5>Bodeo - v1.1.8</h5>
+    
+    <h2>Topics</h2>
+    
+    <ul class="list-unstyled">
+        <li><a href="#gettingstarted">Getting Started</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#pages">Pages &amp; Partials</a></li>
+        <li><a href="#building">Integration</a></li>
+        <li><a href="#custom">Customization</a></li>
+        <li><a href="#angular">AngularJS App</a></li>
+        <li><a href="#special">Special Features</a></li>
+        <li><a href="#thirdparty">Third-party Attribution</a></li>
+        <li><a href="#support">Help and Support</a></li>
+    </ul>
+    
+    <hr id="gettingstarted">
+    
+    <h2>Getting Started</h2>
+    
+    <p>
+        Welcome to Bodeo! This theme and site template was created with simplicity, integration and
+        customization in mind. Bodeo should be <b>run from a Web server</b>(http://), and not directly 
+        from the file system (file://). To integrate Bodeo with your project, you&apos;ll need:
+        
+        <ol>
+            <li>Access to a Web server (A.K.A Website host)</li>
+            <li>An ASCII text editor or the Web IDE of your choice</li>
+            <li>A basic understanding of HTML and CSS</li>
+        </ol>
+        
+        The simplest way to get started is to copy (upload or deploy) the contents (files and folders) of the `/blank` folder to the root
+        folder of the Web site on the Web server. This will get you started with a minimal Website instance. For more information, see <a href="#building">integration</a>. 
+    </p>
+    <p>The default &quot;theme&quot; file is `/css/bootstrap-custom.css`.</p>
+    
+    <hr id="structure">
+    
+    <h2>Structure</h2>
+    <table>
+       <tr><td><strong>/app</strong></td><td>AngularJS starter app with simple routing, views and mock data services.</td></tr>
+       <tr><td><strong>/assets</strong></td><td>Images, videos and media files.</td></tr>
+       <tr><td><strong>/blank</strong></td><td>Minimal site with homepage and empty &quot;blank&quot; page template.</td></tr>
+       <tr><td><strong>/css</strong></td><td>CSS files for this theme, Bootstrap and font icons.</td></tr>
+       <tr><td><strong>/fonts</strong></td><td>Files (.ttf, .woff, .svg, etc...) for any fonts referenced from the CSS files.</td></tr>
+       <tr><td><strong>/gulp</strong></td><td>Gulp script to rebuild / recompile using NPM and Gulp.</td></tr> 
+       <tr><td><strong>/js</strong></td><td>Javascript files for jQuery app, _inc loader.js for includes and Bootstrap.</td></tr>
+       <tr><td><strong>/partials</strong></td><td>Include files loaded by `loader.js`.</td></tr>
+       <tr><td><strong>/sass</strong></td><td>The SASS source files that are used to generate the theme&apos;s CSS files.</td></tr>
+       <tr><td><strong>/static</strong></td><td>Full static html version without dynamic includes, templating or data.</td></tr>
+       <tr><td><strong>demos.html</strong></td><td>Demos page with various entry points.</td></tr>
+       <tr><td><strong>docs.html</strong></td><td>This file (you are here!).</td></tr>
+       <tr><td><strong>index.html</strong></td><td>The home page (templated with _inc loader).</td></tr>
+       <tr><td><strong>*.html</strong></td><td>All html template pages containing partial `loader.js` includes.</td>
+    </tr></table>
+    
+    <hr id="pages">
+    
+    <h2>Pages</h2>
+    	<table>
+		<tr><td>/about.html</td><td> About page to describe a site or company </td></tr>
+		<tr><td>/blank.html</td><td> A blank page ready for content </td></tr>
+		<tr><td>/blog-detail.1.html</td><td> Alternate single Blog post layout with comments and related posts below </td></tr>
+		<tr><td>/blog-detail.html</td><td> Single Blog post page with comments and related posts below </td></tr>
+		<tr><td>/blog.html</td><td> Blog page with carousel slider, highlighted posts and sidebar </td></tr>
+		<tr><td>/cards.html</td><td> Page with various examples of cards and card layouts </td></tr>
+		<tr><td>/cart.html</td><td> A shopping cart page with list of products and link to checkout </td></tr>
+		<tr><td>/clients.html</td><td> Client or testimonials page with profiles and quotes </td></tr>
+		<tr><td>/contact.html</td><td> Contact information page and contact form </td></tr>
+		<tr><td>/dashboard.html</td><td> Admin dashboard style page various cards, tabs and sidebar menu </td></tr>
+		<tr><td>/demos.html</td><td> Demos page with various examples </td></tr>
+		<tr><td>/docs.html</td><td> Documentation (you are here) </td></tr>
+		<tr><td>/elements.html</td><td> Reusable widgets and elements than demonstrate various UI components </td></tr>
+		<tr><td>/error-404.html</td><td> 404 not found error page </td></tr>
+		<tr><td>/faq.html</td><td> Frequently Asked Questions page using an accordion-style collapsing sections </td></tr>
+		<tr><td>/features.html</td><td> Features grid with icons and headings, and an alternating &quot;featurettes&quot; list </td></tr>
+		<tr><td>/index.html</td><td> Hello home page! A long scrolling slider with various sections </td></tr>
+		<tr><td>/invoice.html</td><td> An example billing invoice page with tables </td></tr>
+		<tr><td>/layout-2-col.html</td><td> A 2-column example layout page with sidebar and main content area </td></tr>
+		<tr><td>/layout-3-col.html</td><td> A 3-column example layout page with sidebar, ads and main content area </td></tr>
+		<tr><td>/layout-full.html</td><td> A full-screen width example layout page with sidebar and main content area </td></tr>
+		<tr><td>/layout-grid.html</td><td> A grid layout page with images that can be used for blocks of content </td></tr>
+		<tr><td>/layout-image.html</td><td> Full-screen photo image background layout with centered overlay CTA </td></tr>
+		<tr><td>/layout-masonry.html</td><td> A multi-column layout for multiple cards or content blocks in masonry pattern </td></tr>
+		<tr><td>/layout-offcanvas.html</td><td> A layout with off-canvas overlay multi-level sidebar menu on the left </td></tr>
+		<tr><td>/layout-sidebar.html</td><td> A layout with responsive multi-level sidebar menu on the left </td></tr>
+		<tr><td>/layout-slider.html</td><td> layout with full-screen carousel images and overlay caption on each slide </td></tr>
+		<tr><td>/layout-video.html</td><td> Full-screen video background layout with centered overlay CTA </td></tr>
+		<tr><td>/legal.html</td><td> Legal jargon page for terms, privacy notice, etc.. </td></tr>
+		<tr><td>/login.html</td><td> User Login and Registration (Sign-up) forms example page </td></tr>
+		<tr><td>/pg-medical.html</td><td> Medical or dental home page example </td></tr>
+		<tr><td>/pg-restaurant.html</td><td> Restaurant dining menu example </td></tr>
+		<tr><td>/portfolio.html</td><td> A portfolio layout with carousel and image grid </td></tr>
+		<tr><td>/pricing.html</td><td> Pricing or options tables page example </td></tr>
+		<tr><td>/product-detail.html</td><td> Single product details page with Add to Cart button </td></tr>
+		<tr><td>/products.html</td><td> Products list page for e-commerce </td></tr>
+		<tr><td>/results.html</td><td> Search results page with form </td></tr>
+		<tr><td>/user-profile.html</td><td> Tabbed user profile page with image and form </td></tr>
+	</table>
+
+	
+	<h2 id="partials">Partials (A.K.A. Shortcodes)</h2>
+	
+	<p>The `/partial` folder contains over 40 smaller, reuseable
+        code snippets that demonstrate various elements and content layouts such as navbars, forms, content sections, cards, lists, option tables and more. You can see
+        that the partials are &quot;included&quot; in the *.html templates using a <code>class=&quot;_inc&quot;</code> and <code>data-template=&quot;...&quot;</code> reference in the HTML.
+    </p>
+	
+	<h4>How the partials are included</h4>
+    <p>
+        The `/js/loader.js` file is a generic jQuery based &quot;include&quot; mechanism to enable partial files.
+        To include a partial file, use the following syntax in HTML:
+        <br>
+        <pre><code>&lt;div class=&quot;inc_&quot; data-template=&quot;./partials/myinclude.html&quot;&gt;&lt;/div&gt;</code></pre>
+        The `.inc_` class is used by jQuery to select any includes on a page. The jQuery .load() method is used
+        to load the HTML content from the partial file into the &quot;host&quot; (parent) file that contains the partial.
+        <br>
+        Using the `loader.js` for includes is completely optional. The `loader.js` is loaded in `script.js`, and therefore will only function when `script.js` is referenced in
+        the parent file that contains the <code>&lt;div class=&quot;inc_&quot; data-template=...</code> include reference.
+    </p>
+   
+    <hr id="building">
+    
+    <h2>Integration</h2>
+    <p>
+        The theme files are modular so that you quickly implement it for your project by including needed resources. Depending on if your site implementation is static or dynamic,
+        there are several approaches to &quot;building&quot; a site utilizing the theme and template pages. Most likely building your site will be an iterative process that utilizes one or more of the following options:
+    </p>
+    
+    <h4>Option 1 - Use the empty site skeleton in the `/blank` folder</h4>
+    <p>
+        To start with a minimal number of pages, try the files in the `blank` folder which contains a site with only `index.html` and &quot;blank.html&quot;. 
+        You can modify these pages, and copy additional pages as needed from the `/static` folder which contains the full site.
+    </p>
+    <h4>Option 2 - Use the full site in the `/static` folder</h4>
+    <p>
+        If you&apos;d like to start closer to the demo site, you can copy and modify the files in the `/static` folder which is a full working copy of the site.
+    </p>
+    <h4>
+        Option 3 - Use the `/partials` files for modular code snippets and examples. 
+    </h4>
+    <p>
+        Most implementations are not completely static sites, and normally templating is used to include repeating portions of each page such as the overall site container (wrapper), navbar
+        and footer. In this case, you may find the `/partials` files useful to build a site that utilizes &quot;views&quot; or a template inclusion mechanism such as 
+        Angular, Mustache, EJS, Razor, Jade, Vue, Handlebars, etc... The partial files are designed to be singular in purpose, reuseable, and easy to modify. The partial files are  
+        named according to the their purpose or content.
+    </p>
+    
+    <h2>jQuery Script</h2>
+    <p>
+        The `js\script.js` file is a minimal jQuery script. This script contains logic for some of the components such as modals, popovers, navbar affix, smooth scrolling, 
+        and WOW.js animations. For more information see the comments in the script.js file.
+    </p>
+    
+    <hr id="angular">
+    
+    <h2>AngularJS App</h2>
+    <p>
+        The `/app` folder contains a AngularJS (1.x) starter app. The app includes &quot;mock&quot; JSON data services that can be replaced with real data services
+        if you intend to integrate AngularJS with your app. You&apos;ll also find examples of using the data in repeating paged lists, 
+        and detail views that demonstrate various content layouts.  The AngularJS app (services and controllers) is in `/app/app.js`. The main app template
+        is `/app/index.html`, and the example views are contained in the `/app/views` folder. If you have a basic understanding of AngularJS this app will
+        help you get started.
+    </p>
+    
+    <hr id="custom">
+    
+    <h2>Customization</h2>
+    <p>
+        Alternate color themes (eg: `theme-dark.css`) can be found in the the `\css` folder. You can use these alternate themes by renaming any of the alternate themes to `bootstrap-custom.css`,
+        or by changing all the references in the HTML head link that references href=&quot;css/bootstrap-custom.css&quot; (eg: change the link href=&quot;css/bootstrap-custom-dark.css&quot;). 
+        Make sure you make a copy of the original `bootstrap-custom.css` before renaming or overwriting it.
+    </p>
+    <h4>Using SASS</h4>
+    <p>
+        If you&apos;re familiar with using SASS, theme color changes can be made by modifying the `colors.scss` SASS file, and then recompiling the SASS to CSS. 
+        All of the SASS variable names used in `colors.scss` are self-explanatory and come from Bootstrap&apos;s variable names. The only additional 
+        variables for this theme are: <br>
+        <br>
+        $brand-accent - used for the main highlight or bold accent color<br>
+        $brand-alt - used for an alternate background color<br>
+    </p>
+    <p>
+        To create a new color scheme, copy one of the existing color subfolders in `sass\custom\` and rename the new folder accordingly. Any changes you make to the `colors.scss` file
+        in the new color subfolder will allow the new color theme to generated when the SASS is recompiled.<br>
+        <br>
+        If you want to make style changes beyond the colors, the `sass\custom` folder contains the `_variable.scss` source file that is used
+        to create the theme and override the default Bootstrap variables (`sass\bootstrap\_variables.scss`). You can make the desired changes to the `sass\custom\_variable.scss` 
+        file, and then recompile the theme using SASS. Remember to backup or copy the original files before making any changes.
+    </p>
+    <p>
+        The css/*.css files can be recompiled from the SASS (.scss) source files using NPM and Gulp (see the gulpfile in the `/gulp` directory).
+    </p>
+    <h4>Using CSS overrides</h4>
+    <p>
+        Another way to change the theme style is to use an additional CSS &quot;override&quot; file. The CSS override `styles.css` must be referenced after the theme 
+        CSS file (bootsrap-custom.css) in the HTML &lt;head&gt; section of the Web pages. For exmaple:
+        
+        <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./css/bootstrap-custom.css&quot;&gt;</code><br>
+        <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./css/styles.css&quot;&gt;</code><br>
+    </p>
+    
+    <hr id="special">
+    
+    <h2>Special Features</h2>
+    
+    <h4>Page Preloader</h4>
+    <p>
+        A simple CSS pre-loading effect can by used by placing the class `preload` in the BODY or HTML tag of any page. To disable the preloader, simply remove 
+        the `preload` class from the BODY tag. An alternate preloader image can be used by changing the CSS `background-image` property of the `.preload::after` class
+        in the CSS file.
+    </p>
+    
+    <h4>Attach (affix) Navbar after Scroll</h4>
+    <p>
+        The `layout-photo.html` utilizes the jQuery `toggleAffix()` function which will &quot;affix&quot; the #topNav (Navbar) once it&apos;s position reaches the top of the viewport.
+        <br>
+        The position of 
+        the Navbar is controlled by the `.wrapper-affix #topNav` and `.wrapper-affix #topNav.affix` CSS definitions in the theme CSS. Initially, the `.wrapper-affix #topNav` is 
+        `position: static`. When the viewport window is scrolled the `toggleAffix()` function &quot;watches&quot; the current scroll position. When the scroll position reaches then bottom of 
+        the element(s) preceding the #topNav, the `.affix` class is added to #topNav which applies any CSS definitions for `.wrapper-affix #topNav.affix`.
+        <br>
+        To use this on other 
+        page(s), add `class=&quot;wrapper-affix&quot;` to the element that contains the element to be affixed (data-toggle=&quot;affix&quot;).
+    </p>
+    
+    <h4>Animations</h4>
+    <p>
+        Dan Eden&apos;s [animate.css](https://github.com/daneden/animate.css) is included for CSS animations. Any of the many animation effect CSS classes can simply be added to the
+        element you wish to animate:
+        <br>
+        <pre><code>&lt;div class=&quot;fadeIn&quot;&gt;This will fade in&lt;/div&gt;</code></pre>
+        WOW.js is used to &quot;activate&quot; the animations on scroll. WOW.js watches the current window(viewport) scroll position. When an element containing the `wow` class is scrolled into view, the `animated` class is added to element to start the animation. 
+        See the complete list of animation effects here: https://github.com/daneden/animate.css
+    </p>
+    
+    <hr id="thirdparty">
+    
+    <h2>Third-party Attribution</h2>
+    
+    <p>Here are the open source projects that made this all possible. Please help us by supporting these project and providing the appropriate credit.</p>
+    
+    <ul class="list-unstyled">
+        <li><a href="//getbootstrap.com">Bootstrap</a></li>
+        <li><a href="//github.com/daneden/animate.css">Dan Eden&apos;s Animation CSS</a></li>
+        <li><a href="//github.com/matthieua/WOW">WOW.js</a></li>
+        <li><a href="//jquery.com/">jQuery</a></li>
+        <li><a href="http://ionicons.com/">Ionicons</a></li>
+        <li><a href="//angularjs.org/">AngularJS</a></li>
+        <li><a href="//developers.google.com/maps/">Google Maps API</a></li>
+        <li><a href="//unsplash.com/">Unsplash</a></li>
+        <li><a href="//coverr.co/">Coverr</a></li>
+        <li><a href="//visualhunt.com/">Visual Hunt</a></li>
+    </ul>
+    
+    <hr id="support">
+    
+    <h2>Help and Support</h2>
+    
+    <h4>Troubleshooting</h4>
+    
+    <p><strong>The website pages/app don&apos;t work when opened in a web browser.</strong></p>
+    <p>
+        The page must be installed/deployed on a Web server and served over http://. Opened the files directly in the Web browser (file:\\) will not work.
+    </p>
+    <p><strong>Some font files won&apos;t load or return 404 errors.</strong></p>
+    <p>
+        Make sure the Web server supports the `.woff` and `.woff2` Mime types. These can be added by adding the appropriate extension and Mime type on the Web server:<br>
+        Extension: .woff<br>
+        MIME type: application/woff<br>
+    </p>
+    <p><strong>The AngularJS app doesn&apos;t load any data.</strong></p>
+    <p>
+        Make sure the Web server supports the `.json` Mime types. This can be added by adding the .json extension and Mime type on the Web server:<br>
+        Extension: .json<br>
+        MIME type: application/json<br>
+        
+    </p>
+    
+    <h4>Support</h4>
+    
+    <p>For questions and help please contact us via the &quot;Contact&quot; section at: http://themes.guide</p>
+    
+    <hr>
+    
+    <h4>Change log</h4>
+    
+    <h6>v1.0.1</h6>
+    <ul>
+        <li>Initial release on Bootstrap 4 Alpha-6.</li>
+    </ul>
+    
+    <h6>v1.0.4</h6>
+    <ul>
+        <li>Fix google static maps</li>
+        <li>Remove unnecessary CSS class in dashboard</li>
+    </ul>
+    
+    <h6>v1.0.5</h6>
+    <ul>
+        <li>Upgrade to Bootstrap 4 beta</li>
+        <li>Update image links on demo page</li>
+        <li>Update padding on cards with progress</li>
+    </ul>
+    
+    <h6>v1.0.6</h6>
+    <ul>
+        <li>Various fixes for Bootstrap 4 Beta migration</li>
+        <li>Improve product and results list pages</li>
+        <li>Fix SASS grayscale bug</li>
+    </ul>
+    
+    <h6>v1.0.7</h6>
+    <ul>
+        <li>Fix alignment of more section on home page</li>
+        <li>Fix alignment of pagination on products list</li>
+        <li>Hide text in sidebar on small widths</li>
+    </ul>
+    
+    <h6>v1.0.8</h6>
+    <ul>
+        <li>Change to outline buttons in some areas</li>
+        <li>Remove extra classes from stats card</li>
+        <li>Move demo CSS to separate file</li>
+        <li>Updates to restaurant menu</li>
+    </ul>
+    
+    <h6>v1.0.9</h6>
+    <ul>
+        <li>Upgrade to Bootstrap 4 beta 2</li>
+        <li>Fix offset top error on scroll nav</li>
+        <li>Fix forms.html link on features page</li>
+    </ul>
+    
+    <h6>v1.1.0</h6>
+    <ul>
+        <li>Fix nav close icon display on mobile</li>
+        <li>Remove extraneous clearfix from features</li>
+    </ul>
+    
+    <h6>v1.1.1</h6>
+    <ul>
+        <li>Upgrade to Bootstrap 4 beta 3</li>
+    </ul>
+    
+    <h6>v1.1.2</h6>
+    <ul>
+        <li>Upgrade to <strong>Bootstrap 4.0.0</strong> (stable)</li>
+        <li>Fix scrollspy offset undefined error</li>
+        <li>Fix 404 error in AngularJS app</li>
+    </ul>
+    
+    <h6>v1.1.3</h6>
+    <ul>
+        <li>Upgrade to <strong>Bootstrap 4.1.0</strong></li>
+        <li>Migrate img-responsive to img-fluid</li>
+        <li>Fix data-parent accordion markup</li>
+        <li>Fix multi carousel slide height</li>
+        <li>Migrate input-group-addon to input-group-append/prepend</li>
+    </ul>
+    
+    <h6>v1.1.4</h6>
+    <ul>
+        <li>Upgrade to <strong>Bootstrap 4.1.3</strong></li>
+        <li>Fix SASS theme colors from brand- to themecolors map</li>
+        <li>Upgrade to <strong>AngularJS 1.7</strong></li>
+        <li>Fix form input prepend append padding</li>
+    </ul>
+    
+    <h6>v1.1.5</h6>
+    <ul>
+        <li>Add latin-extended fonts for Montserrat and Rokkitt</li>
+    </ul>
+    
+    <h6>v1.1.6</h6>
+    <ul>
+        <li>Upgrade to <strong>Bootstrap 4.2.1</strong></li>
+    </ul>
+    
+    <h6>v1.1.7</h6>
+    <ul>
+        <li>Upgrade to <strong>Bootstrap 4.3.1</strong></li>
+        <li>Fix small display issues on Cards page</li>
+        <li>Added Toast example to Admin page</li>
+    </ul>
+    
+    <h6>v1.1.8</h6>
+    <ul>
+        <li>Fix Sidebar accordion parent bug</li>
+        <li>Fix Toast container overlay bug</li>
+    </ul>
+    
+    <hr>
+    <br><br><br><br>
+    <br><br><br><br>
+    The End.
+</body>
+</html>
